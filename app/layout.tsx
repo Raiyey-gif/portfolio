@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ranandra | Web Developer",
   description: "Interfaces, motion and 3D with Next.js, React and WebGL.",
-}
+  verification: {
+    google: "Qhx2LBoo1tmR82N79CVF0oPOlNvKPtUiMFnqQQBmymM", 
+  },
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
