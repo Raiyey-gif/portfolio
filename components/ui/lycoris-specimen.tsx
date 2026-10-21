@@ -1293,7 +1293,7 @@ return (
       ref={rootRef}
       className={"relative w-full " + className}
       style={{ height: "calc(" + height + " * " + (1 + (SCENES - 1) * sceneScroll).toFixed(3) + ")", background: ink }}
-      aria-label={name + " typeface specimen"}
+      aria-label={name + " portfolio"}
     >
       <style>{CSS}</style>
       <div
