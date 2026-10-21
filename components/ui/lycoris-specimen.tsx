@@ -1672,7 +1672,7 @@ return (
             {status === "sent" ? "Sent. Thank you, I'll reply soon."
               : status === "invalid" ? "Please add your name, a valid email and a short message."
               : status === "error" ? "Something went wrong. Please email me directly."
-              : "I usually reply within a few days."}
+              : "I only use your details to reply to you."}
           </span>
           <button
             type="submit"
