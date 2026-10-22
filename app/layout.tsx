@@ -21,10 +21,9 @@ const federant = Federant({
   variable: "--font-federant",
 });
 
-const title = "Ranandra | Web Developer, Next.js & WebGL";
+const title = "Raisah Kirana Candra (Ranandra) | Full-Stack Developer";
 const description =
-  "Portfolio of Ranandra (Raisah Kirana Candra), a web developer building fast, clear interfaces with Next.js, React and WebGL.";
-
+  "Portfolio of Raisah Kirana Candra, also known as Ranandra: a full-stack developer building fast, clear interfaces with Next.js, React and WebGL.";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title,
@@ -48,7 +47,7 @@ const jsonLd = {
     {
       "@type": "Person",
       "@id": SITE + "/#person",
-      name: "Raisah Kirana Candra",
+      name: "Raisah Kirana Candra (Ranandra)",
       alternateName: "Ranandra",
       jobTitle: "Web Developer",
       url: SITE,
