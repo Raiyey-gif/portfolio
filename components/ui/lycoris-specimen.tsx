@@ -1427,11 +1427,6 @@ return (
       </div>
     ))}
   </div>
-
-  {/* bottom label */}
-  <div {...sc(1, "rise", 0.7)} className="absolute" style={{ ...sans, ...hidden, left: "5cqw", bottom: "5cqh", fontSize: 9, letterSpacing: "0.3em", textTransform: "uppercase" }}>
-    <span style={{ color: royalblue }}>02</span> &mdash; {name}, portfolio architecture
-  </div>
 </div>
 
  {/* ============================== 2 · Component Tree ============================== */}
@@ -1611,10 +1606,6 @@ return (
         Skip gate &rarr;
       </button>
     </div>
-  </div>
-
-  <div {...sc(3, "rise", 0.8)} className="absolute" style={{ ...sans, ...hidden, left: "6cqw", bottom: "5cqh", fontSize: 9, letterSpacing: "0.5em", textTransform: "uppercase" }}>
-    {studio}
   </div>
 </div>
      
