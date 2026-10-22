@@ -10,8 +10,8 @@ export default function Image() {
     (
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: 80, background: "#120805", color: "#f1e3cc" }}>
         <div style={{ display: "flex", fontSize: 28, letterSpacing: 8, color: "#2f5bff" }}>PORTFOLIO</div>
-        <div style={{ display: "flex", fontSize: 150, fontWeight: 700, lineHeight: 1 }}>Ranandra</div>
-        <div style={{ display: "flex", fontSize: 40, opacity: 0.75, marginTop: 20 }}>Web developer · Next.js, React, WebGL</div>
+        <div style={{ display: "flex", fontSize: 110, fontWeight: 700, lineHeight: 1 }}>Raisah Kirana Candra</div>
+        <div style={{ display: "flex", fontSize: 40, opacity: 0.75, marginTop: 20 }}>Ranandra · Full-stack developer · Next.js, React, WebGL</div>
       </div>
     ),
     { ...size }
