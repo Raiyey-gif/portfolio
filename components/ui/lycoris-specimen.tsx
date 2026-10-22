@@ -665,7 +665,7 @@ export default function LycorisSpecimen({
   name = "Ranandra",
   studio = "Raisah Kirana Candra",
   year = "2026",
-  description = "I'm Ranandra, , and I go by Ranandra online. I'm a full stack programmer and Electrical Engineering student. I love building interfaces that are fast, clear and a little bit delightful, with an eye for motion and the small details that make a site feel considered.",
+  description = "I'm Ranandra, and I go by Ranandra online. I'm a full stack programmer and Electrical Engineering student. I love building interfaces that are fast, clear and a little bit delightful, with an eye for motion and the small details that make a site feel considered.",
   specs = [
     "Web developer",
     "Next.js / React / Vue",
