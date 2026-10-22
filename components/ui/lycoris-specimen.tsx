@@ -401,10 +401,10 @@ const KEYS: Key[] = [
 // Portrait stages move the flower rather than squeezing the type.
 const KEYS_TALL: Partial<Key>[] = [
   { size: 0.82, oy: 0.22 },
-  { size: 0.56 },
-  { size: 0.34, oy: 0.44 },
-  { size: 0.95, oy: -0.2 },                                    // in KEYS_TALL, 4th entry
-  { size: 0.7, oy: 1.1 }, 
+  { size: 0.56, oy: 0.24 },
+  { size: 0.34, oy: 0.12 },
+  { size: 0.32, ox: 0, oy: -0.85 },
+  { size: 0.7, oy: 1.1 },
 ]
 const SCENES = KEYS.length
 const HOLD = 0.34
@@ -648,6 +648,7 @@ const CSS =
   "@container lys (max-width: 720px) or (orientation: portrait){.lys-f3{left:6cqw!important;right:6cqw!important;top:7cqh!important}.lys-h3{font-size:min(11cqw,6cqh)!important}.lys-tt{display:none}}" +
   ".lys-in{transition:border-color .25s}.lys-in:focus{border-color:var(--lys-red)!important}.lys-in::placeholder{color:currentColor;opacity:.4}" +
   "@container lys (max-width: 900px) or (orientation: portrait){.lys-contact{grid-template-columns:1fr!important;row-gap:3cqh;top:22cqh!important}.lys-h4{font-size:min(11cqw,7cqh)!important}.lys-cp{display:none}}" +
+  "@container lys (max-width: 720px) or (orientation: portrait){.lys-nav{display:none!important}.lys-foot{flex-direction:column!important;align-items:flex-start!important;gap:1.6cqh!important}.lys-by{padding-right:0!important}.lys-credits{flex-wrap:wrap;gap:4px 16px!important;font-size:9px!important}.lys-ring{top:38%!important}.lys-calls{bottom:12cqh!important}.lys-card{max-width:none!important}.lys-p3{max-width:none!important}.lys-tt{display:none!important}}" +
   "@media (prefers-reduced-motion: reduce){.lys-ticker{animation:none}}" +
   "@media (prefers-reduced-motion: reduce){.lys-char{animation:none}.lys-g{transition:none}}"
 
@@ -1376,7 +1377,7 @@ return (
             <div {...sc(0, "rise", 0.3)} className="flex items-center gap-3" style={hidden}>
               <Mark color={bone} accent={royalblue} />
               <span style={{ ...sans, fontSize: "clamp(20px, 2.4cqw, 34px)", letterSpacing: "-0.02em", fontWeight: 300 }}>{year}</span>
-              <span style={{ ...sans, fontSize: 9, lineHeight: 1.2, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "1px solid " + bone + "80", paddingBottom: 6, paddingRight: "6cqw" }}>
+              <span className="lys-by" style={{ ...sans, fontSize: 9, lineHeight: 1.2, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "1px solid " + bone + "80", paddingBottom: 6, paddingRight: "6cqw" }}>
                 Built by
                 <br />
                 {studio}
@@ -1396,7 +1397,7 @@ return (
   <div
     {...sc(1, "fade", 0.2)}
     aria-hidden
-    className="absolute"
+    className="absolute lys-ring"
     style={{ ...hidden, left: "50%", top: "50%", width: "58cqmin", height: "58cqmin", transform: "translate(-50%,-50%)", border: "1px dashed " + bone + "33", borderRadius: "50%" }}
   />
 
@@ -1562,13 +1563,13 @@ return (
     <div {...sc(3, "clip", 0.2)} className="lys-h3" style={{ ...hidden, fontSize: "min(5.6cqw, 9cqh)", lineHeight: 0.98, color: royalblue }}>digital</div>
     <div {...sc(3, "clip", 0.3)} className="lys-h3" style={{ ...hidden, fontSize: "min(5.6cqw, 9cqh)", lineHeight: 0.98 }}>logic</div>
 
-    <p {...sc(3, "rise", 0.4)} style={{ ...hidden, margin: "2.4cqh 0 0", maxWidth: "34cqw", fontSize: "clamp(11px, min(1.3cqw, 2.1cqh), 18px)", lineHeight: 1.55 }}>
+    <p {...sc(3, "rise", 0.4)} className="lys-p3" style={{ ...hidden, margin: "2.4cqh 0 0", maxWidth: "34cqw", fontSize: "clamp(11px, min(1.3cqw, 2.1cqh), 18px)", lineHeight: 1.55 }}>
       I come from electrical engineering, so I like systems that are simple, testable and honest. Flip the switches and light the lamp.
     </p>
 
     <div
       {...sc(3, "rise", 0.5)}
-      className="pointer-events-auto"
+      className="pointer-events-auto lys-card"
       style={{ ...hidden, marginTop: "3cqh", maxWidth: "36cqw", border: "1px solid " + bone + "33", background: ink + "b3", padding: "1.8cqh 1.4cqw" }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.8cqh" }}>
