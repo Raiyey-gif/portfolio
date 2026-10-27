@@ -576,7 +576,7 @@ void main() {
 const DISPLAY = '"Federant", "Uncial Antiqua", "Cinzel Decorative", "Iowan Old Style", "Palatino Linotype", Georgia, serif'
 const SANS = '"Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif'
 const MONO = 'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace'
-const EMAIL = "ranandra313@gmail.com"
+const EMAIL = "ranandra.builds@gmail.com"
 const TOPICS = [
   { k: "Say hello", ph: "What's on your mind?" },
   { k: "Hiring", ph: "Tell me about the role and the team." },
